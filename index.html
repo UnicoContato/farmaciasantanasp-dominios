@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia Sant'ana - Desde 1967</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-['Outfit'] bg-slate-50 text-slate-800 relative overflow-x-hidden">
+
+    <div class="fixed top-[-10%] left-[-10%] w-96 h-96 bg-blue-400/40 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob z-[-1]"></div>
+    <div class="fixed top-[20%] right-[-10%] w-96 h-96 bg-red-400/30 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-2000 z-[-1]"></div>
+    <div class="fixed bottom-[-20%] left-[20%] w-96 h-96 bg-yellow-300/30 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-4000 z-[-1]"></div>
+
+    <header id="header" class="fixed w-full top-0 z-50 transition-all duration-300 glass border-b border-white/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold text-blue-900 tracking-tight flex items-center gap-2">
+                        <svg class="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        Sant'ana
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-slate-700 hover:text-blue-600 font-medium transition-colors">Início</a>
+                    <a href="#sobre" class="text-slate-700 hover:text-blue-600 font-medium transition-colors">Sobre</a>
+                    <a href="#servicos" class="text-slate-700 hover:text-blue-600 font-medium transition-colors">Serviços</a>
+                    <a href="#galeria" class="text-slate-700 hover:text-blue-600 font-medium transition-colors">Galeria</a>
+                    <a href="#contato" class="text-slate-700 hover:text-blue-600 font-medium transition-colors">Contato</a>
+                </nav>
+                <div class="hidden md:flex">
+                    <a href="https://wa.me/551140147313" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium transition-all shadow-lg hover:shadow-blue-600/50">
+                        WhatsApp
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-700 hover:text-blue-600 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden glass border-t border-white/20">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#inicio" class="block px-3 py-2 text-slate-700 hover:text-blue-600 font-medium">Início</a>
+                <a href="#sobre" class="block px-3 py-2 text-slate-700 hover:text-blue-600 font-medium">Sobre</a>
+                <a href="#servicos" class="block px-3 py-2 text-slate-700 hover:text-blue-600 font-medium">Serviços</a>
+                <a href="#galeria" class="block px-3 py-2 text-slate-700 hover:text-blue-600 font-medium">Galeria</a>
+                <a href="#contato" class="block px-3 py-2 text-slate-700 hover:text-blue-600 font-medium">Contato</a>
+                <a href="https://wa.me/551140147313" target="_blank" class="block px-3 py-2 text-blue-600 font-bold">WhatsApp: (11) 4014-7313</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="hero-bg bg-[url('img/1.jpeg')] bg-cover bg-center absolute inset-0"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-slate-900/60 mix-blend-multiply"></div>
+        </div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto reveal">
+            <span class="text-yellow-400 font-semibold tracking-wider uppercase text-sm mb-4 block">Desde 1967</span>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Tradição e Cuidado em <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-red-400">Cada Dose</span>
+            </h1>
+            <p class="text-xl text-slate-200 mb-10 max-w-2xl mx-auto">
+                Excelência em comércio varejista de produtos farmacêuticos e manipulação de fórmulas para a sua saúde e bem-estar.
+            </p>
+            <a href="#servicos" class="inline-block bg-white text-blue-900 font-bold px-8 py-4 rounded-full hover:bg-slate-100 transition-all shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)] transform hover:-translate-y-1">
+                Conheça Nossos Serviços
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal">
+                    <h2 class="text-4xl font-bold text-blue-900 mb-6">Nossa História: Tradição e Cuidado em Cada Dose</h2>
+                    <div class="glass-card p-8 text-slate-700 space-y-4 leading-relaxed">
+                        <p>Em 1967, o jovem Claudio Rossi partia de Itatiba com um objetivo claro, mas sem dimensão da trajetória que estava prestes a iniciar. Ao chegar em Morungaba para assumir a única farmácia da cidade, ele não encontrou apenas um desafio profissional, mas o propósito de sua vida. Foi ali que a Farmácia Sant'ana deu seus primeiros passos, unindo-se intrinsecamente ao desenvolvimento e à história do município.</p>
+                        <p>Ao lado de sua esposa, a professora Maria Cecília, Claudio construiu mais do que um balcão de atendimento; ele estabeleceu um porto seguro para a saúde da comunidade. O compromisso do casal com Morungaba foi além da farmácia, contribuindo ativamente para o crescimento da cidade através de mandatos públicos e ações sociais, o que consolidou o nome da família Rossi como sinônimo de ética e dedicação ao próximo.</p>
+                        <p>Com o passar das décadas, a Sant'ana soube honrar suas raízes enquanto abraçava a inovação. De uma farmácia tradicional, evoluímos para um centro de manipulação moderno. Hoje, guiados pelo exemplo e pelo senso ético de nossos fundadores, operamos sob pilares que definem nossa identidade, mantendo-nos como a principal referência em atendimento humanizado e longevidade.</p>
+                        <p class="font-semibold text-blue-800 mt-4">Sant'ana Farmácia e Manipulação – Cuidando da sua família como se fosse a nossa.</p>
+                    </div>
+                </div>
+                <div class="reveal relative h-full min-h-[400px]">
+                    <img src="img/2.jpeg" alt="Interior da Farmácia" class="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl z-10">
+                    <div class="absolute inset-0 bg-blue-600 rounded-3xl transform translate-x-4 translate-y-4 -z-0 opacity-20"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-bold text-blue-900 mb-4">Nossos Serviços</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Soluções completas em saúde, unindo a precisão tecnológica do nosso laboratório à sensibilidade do atendimento humanizado.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 flex flex-col items-center text-center floating reveal">
+                    <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Manipulação de Fórmulas</h3>
+                    <p class="text-slate-600">Medicamentos personalizados feitos sob medida para as suas necessidades específicas, com rigor técnico e qualidade garantida.</p>
+                </div>
+                <div class="glass-card p-8 flex flex-col items-center text-center floating reveal" style="animation-delay: 0.2s;">
+                    <div class="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center text-red-600 mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Medicamentos e Genéricos</h3>
+                    <p class="text-slate-600">Ampla variedade de medicamentos de referência e genéricos com os melhores preços e garantia de procedência.</p>
+                </div>
+                <div class="glass-card p-8 flex flex-col items-center text-center floating reveal" style="animation-delay: 0.4s;">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center text-yellow-600 mb-6">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Perfumaria e Suplementos</h3>
+                    <p class="text-slate-600">Produtos de higiene, beleza, cuidados infantis e suplementação alimentar para o cuidado integral da sua família.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-24 relative bg-white/40 backdrop-blur-sm border-y border-white/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-bold text-blue-900 mb-4">Nossa Estrutura</h2>
+                <p class="text-slate-600">Conheça o espaço onde unimos tradição e modernidade.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 reveal">
+                <div class="overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="img/1.jpeg" alt="Fachada da Farmácia" class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                </div>
+                <div class="overflow-hidden rounded-2xl shadow-lg group">
+                    <img src="img/2.jpeg" alt="Interior da Farmácia" class="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <div class="reveal">
+                    <h2 class="text-4xl font-bold text-blue-900 mb-8">Entre em Contato</h2>
+                    <div class="glass-card p-8 space-y-6">
+                        <div class="flex items-start gap-4">
+                            <svg class="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                            <div>
+                                <h4 class="font-bold text-slate-800">Razão Social</h4>
+                                <p class="text-slate-600">CLAUDIO ROSSI (FARMACIA SANT'ANA)</p>
+                                <p class="text-slate-500 text-sm">CNPJ: 50.118.272/0001-69</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <svg class="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <div>
+                                <h4 class="font-bold text-slate-800">Endereço</h4>
+                                <p class="text-slate-600">PC JOAO PESSOA, 67, CENTRO</p>
+                                <p class="text-slate-600">MORUNGABA - SP, CEP: 13.260-000</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <svg class="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <div>
+                                <h4 class="font-bold text-slate-800">Telefones / WhatsApp</h4>
+                                <p class="text-slate-600">(11) 4014-7313</p>
+                                <p class="text-slate-600">(11) 4014-7252</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <svg class="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <div>
+                                <h4 class="font-bold text-slate-800">E-mail</h4>
+                                <p class="text-slate-600">FINANCEIRO@FARMASANTANA.COM.BR</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal h-full min-h-[400px]">
+                    <div class="glass-card p-2 w-full h-full">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.805825227658!2d-46.7937!3d-22.8837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDUzJzAxLjMiUyA0NsKwNDcnMzcuMyJX!5e0!3m2!1spt-BR!2sbr!4v1610000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0; border-radius: 1rem;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-blue-950 text-slate-300 py-12 border-t border-white/10 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <p class="font-bold text-white text-lg">CLAUDIO ROSSI</p>
+                <p class="text-sm">CNPJ: 50.118.272/0001-69</p>
+            </div>
+            <div class="text-center md:text-right">
+                <p>&copy; 2026 Farmácia Sant'ana. Todos os direitos reservados.</p>
+                <button id="btn-privacidade" class="text-sm text-blue-400 hover:text-white transition-colors mt-2">Política de Privacidade</button>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/551140147313" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all z-50 animate-pulse-fast flex items-center justify-center">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <div id="modal-privacidade" class="fixed inset-0 z-[100] hidden">
+        <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm modal-bg"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl px-4">
+            <div class="glass-card bg-white/90 p-8 rounded-3xl shadow-2xl relative">
+                <button id="close-modal" class="absolute top-4 right-4 text-slate-500 hover:text-red-500">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+                <h3 class="text-2xl font-bold text-blue-900 mb-4">Política de Privacidade</h3>
+                <div class="h-64 overflow-y-auto pr-2 text-slate-600 space-y-4 text-sm">
+                    <p>A Farmácia Sant'ana tem o compromisso com a privacidade e a segurança de seus clientes durante todo o processo de navegação pelo site.</p>
+                    <p>Os dados cadastrais dos clientes não são vendidos, trocados ou divulgados para terceiros, exceto quando essas informações são necessárias para o processo de entrega ou para cobrança.</p>
+                    <p>Utilizamos cookies e informações de sua navegação com o objetivo de traçar um perfil do público que visita o site e aperfeiçoar sempre nossos serviços, produtos e conteúdos.</p>
+                    <p>As alterações sobre nossa política de privacidade serão devidamente informadas neste espaço.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
